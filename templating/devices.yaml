@@ -1,0 +1,22 @@
+---
+- hostname: "S1"
+  mgmt_if: "vlan1"
+  mgmt_ip: "10.144.35.21"
+  interfaces:
+  - name: "Gi0/0"
+    description: "Connection to mgmt switch"
+    active: True
+    mode: "access"
+    vlans: "1"
+  - name: "Gi0/1"
+    description: "N/C"
+    active: False
+  - name: "Gi0/2"
+    description: "N/C"
+    active: False
+  - name: "Gi0/3"
+    description: "N/C"
+    active: False 
+# - hostname: "S2"
+#   mgmt_if: "vlan1"
+#   mgmt_ip: "10.144.35.22"

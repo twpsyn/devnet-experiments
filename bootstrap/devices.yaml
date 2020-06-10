@@ -1,0 +1,11 @@
+---
+- hostname: "S1"
+  mgmt_ip: "10.144.35.21"
+- hostname: "S2"
+  mgmt_ip: "10.144.35.22"
+- hostname: "S3"
+  mgmt_ip: "10.144.35.23"
+- hostname: "S4"
+  mgmt_ip: "10.144.35.24"
+- hostname: "S5"
+  mgmt_ip: "10.144.35.25"

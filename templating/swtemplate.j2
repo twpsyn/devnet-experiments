@@ -1,0 +1,40 @@
+hostname {{ device.hostname }}
+no ip domain-lookup
+ip domain-name lab.home
+
+vrf definition mgmt-vrf
+ address-family ipv4
+ exit-address-family
+
+interface {{ device.mgmt_if }}
+ vrf forwarding mgmt-vrf
+ ip address {{ device.mgmt_ip }} 255.255.255.0
+ no shut
+
+ip route vrf mgmt-vrf 0.0.0.0 0.0.0.0 10.144.35.1
+
+{% for interface in device.interfaces %}
+interface {{ interface.name }}
+ description {{ interface.description }}
+ {% if interface.active -%} 
+ {% if interface.mode == "access" -%}
+ switchport mode access
+ switchport access vlan {{ interface.vlans }}
+ {% else -%}
+ switchport mode trunk
+ switchport trunk allowed vlans {{ interface.vlans }}
+ {% endif -%}
+ no shutdown
+ {% else -%}
+ shutdown
+ {% endif -%}
+{% endfor %}
+
+username cisco priv 15 password cisco
+
+line vty 0 16
+ login local
+ transport input all
+
+crypto key generate rsa modulus 1024
+

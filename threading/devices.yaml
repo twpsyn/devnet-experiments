@@ -1,0 +1,11 @@
+---
+- hostname: "S1"
+  address: "10.144.35.21"
+- hostname: "S2"
+  address: "10.144.35.22"
+- hostname: "S3"
+  address: "10.144.35.23"
+- hostname: "S4"
+  address: "10.144.35.24"
+- hostname: "S5"
+  address: "10.144.35.25"
