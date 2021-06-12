@@ -1,0 +1,46 @@
+---
+- hostname: "R1"
+  address: 10.144.32.106
+  interfaces:
+  - name: "Gi0/1"
+    description: "R1 Internal Interface"
+    active: True
+    address: "172.16.1.1"
+    netmask: "255.255.255.252"
+  - name: "Gi0/2"
+    description: "N/C"
+    active: False
+  - name: "Gi0/3"
+    description: "N/C"
+    active: False 
+  routes:
+  - destnet: "1.1.1.0"
+    destmask: "255.255.255.0"
+    nexthop: "172.16.1.2"
+  - destnet: "1.1.2.0"
+    destmask: "255.255.255.0"
+    nexthop: "172.16.1.2"
+- hostname: "R2"
+  address: 10.144.32.107
+  interfaces:
+  - name: "Gi0/1"
+    description: "R2 Internal Interfacee"
+    active: True
+    address: "172.16.2.1"
+    netmask: "255.255.255.252"
+  - name: "Gi0/2"
+    description: "N/C"
+    active: False
+  - name: "Gi0/3"
+    description: "N/C"
+    active: False 
+  routes:
+  - destnet: "1.2.1.0"
+    destmask: "255.255.255.0"
+    nexthop: "172.16.2.2"
+  - destnet: "1.2.2.0"
+    destmask: "255.255.255.0"
+    nexthop: "172.16.2.2"
+# - hostname: "S2"
+#   mgmt_if: "vlan1"
+#   mgmt_ip: "10.144.35.22"

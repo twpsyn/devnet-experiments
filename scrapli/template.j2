@@ -1,0 +1,35 @@
+hostname {{ device.hostname }}
+no ip domain-lookup
+
+{% for interface in device.interfaces %}
+interface {{ interface.name }}
+ {% if interface.description is defined -%}
+ description {{ interface.description }}
+ {% else -%}
+ no description
+ {% endif -%}
+ {% if interface.address is defined -%}
+ ip address {{ interface.address }} {{ interface.netmask }}
+ {% else -%}
+ no ip address
+ {% endif -%}
+ {% if interface.active -%} 
+ no shutdown
+ {% else -%}
+ shutdown
+ {% endif -%}
+ exit
+{% endfor -%}
+
+{% for route in device.routes -%}
+ip route {{ route.destnet }} {{ route.destmask }} {{ route.nexthop }}
+{% endfor -%}
+
+{# banner motd £
+**********************
+This is {{ device.hostname }}
+It is a lab system.
+Have fun
+**********************
+£ #}
+
