@@ -41,6 +41,114 @@
   - destnet: "1.2.2.0"
     destmask: "255.255.255.0"
     nexthop: "172.16.2.2"
+# - hostname: "R3"
+#   address: 10.144.32.108
+#   interfaces:
+#   - name: "Gi0/1"
+#     description: "R3 Internal Interfacee"
+#     active: True
+#     address: "172.16.3.1"
+#     netmask: "255.255.255.252"
+#   - name: "Gi0/2"
+#     description: "N/C"
+#     active: False
+#   - name: "Gi0/3"
+#     description: "N/C"
+#     active: False 
+#   routes:
+#   - destnet: "1.3.1.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.3.2"
+#   - destnet: "1.3.2.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.3.2"
+# - hostname: "R4"
+#   address: 10.144.32.109
+#   interfaces:
+#   - name: "Gi0/1"
+#     description: "R4 Internal Interfacee"
+#     active: True
+#     address: "172.16.4.1"
+#     netmask: "255.255.255.252"
+#   - name: "Gi0/2"
+#     description: "N/C"
+#     active: False
+#   - name: "Gi0/3"
+#     description: "N/C"
+#     active: False 
+#   routes:
+#   - destnet: "1.4.1.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.4.2"
+#   - destnet: "1.4.2.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.4.2"
+# - hostname: "R5"
+#   address: 10.144.32.110
+#   interfaces:
+#   - name: "Gi0/1"
+#     description: "R5 Internal Interfacee"
+#     active: True
+#     address: "172.16.5.1"
+#     netmask: "255.255.255.252"
+#   - name: "Gi0/2"
+#     description: "N/C"
+#     active: False
+#   - name: "Gi0/3"
+#     description: "N/C"
+#     active: False 
+#   routes:
+#   - destnet: "1.5.1.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.5.2"
+#   - destnet: "1.5.2.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.5.2"
+# - hostname: "R6"
+#   address: 10.144.32.111
+#   interfaces:
+#   - name: "Gi0/1"
+#     description: "R6 Internal Interfacee"
+#     active: True
+#     address: "172.16.6.1"
+#     netmask: "255.255.255.252"
+#   - name: "Gi0/2"
+#     description: "N/C"
+#     active: False
+#   - name: "Gi0/3"
+#     description: "N/C"
+#     active: False 
+#   routes:
+#   - destnet: "1.6.1.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.6.2"
+#   - destnet: "1.6.2.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.6.2"
+# - hostname: "R7"
+#   address: 10.144.32.112
+#   interfaces:
+#   - name: "Gi0/1"
+#     description: "R7 Internal Interfacee"
+#     active: True
+#     address: "172.16.7.1"
+#     netmask: "255.255.255.252"
+#   - name: "Gi0/2"
+#     description: "N/C"
+#     active: False
+#   - name: "Gi0/3"
+#     description: "N/C"
+#     active: False 
+#   routes:
+#   - destnet: "1.7.1.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.7.2"
+#   - destnet: "1.7.2.0"
+#     destmask: "255.255.255.0"
+#     nexthop: "172.16.7.2"
+
+
+
 # - hostname: "S2"
 #   mgmt_if: "vlan1"
 #   mgmt_ip: "10.144.35.22"
