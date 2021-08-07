@@ -19,7 +19,8 @@ for device in devices:
         auth_password="cisco",
         auth_strict_key=False,
         platform="cisco_iosxe",
-        transport="ssh2"
+        transport_options={"open_cmd": ["-o", "PubkeyAuthentication=no"]}
+        # transport="ssh2"
     )
 
     conn.open()

@@ -30,6 +30,13 @@ Took 3.1362390518188477 seconds to complete
 (venv) matt@slappy scrapli $
 ```
 
-The default transport is `system` which should be whatever ssh is used on the host system. It should be openssh on my system. The `ssh2` transport should in theory be no quicker since it simply has a different wrapper to that, but it is quicker.
+The default transport is `system` which should be whatever ssh is used on the host system. It should be openssh on my system. The `ssh2` transport should in theory be no quicker since it simply has a different wrapper to that, but it is quicker. [[resolved]](#transport-update)
 
 So using the ssh2 transport in Scrapli, the two are broadly comparable in this test at least.
+
+---
+
+### Transport Update
+After speaking with Carl on discord, I tracked the slowness of the system transport in Scrapli to openssh attempting to perform public key authentication before password. That was taking a not-insignificant time to fail, which may be an artifact of the virtual devices that I'm using. 
+
+The fix was to add `transport_options={"open_cmd": ["-o", "PubkeyAuthentication=no"]}` to the connection parameters.
