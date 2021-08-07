@@ -1,0 +1,185 @@
+ThreadPoolExecutor-0_0 root INFO: Worker started for device 10.144.32.11
+ThreadPoolExecutor-0_1 root INFO: Worker started for device 10.144.32.12
+Thread-1 paramiko.transport DEBUG: starting thread (client mode): 0x7e1c81f0
+Thread-2 paramiko.transport DEBUG: starting thread (client mode): 0x7e1c8340
+Thread-1 paramiko.transport DEBUG: Local version/idstring: SSH-2.0-paramiko_2.7.2
+Thread-2 paramiko.transport DEBUG: Local version/idstring: SSH-2.0-paramiko_2.7.2
+Thread-1 paramiko.transport DEBUG: Remote version/idstring: SSH-1.99-Cisco-1.25
+Thread-1 paramiko.transport INFO: Connected (version 1.99, client Cisco-1.25)
+Thread-2 paramiko.transport DEBUG: Remote version/idstring: SSH-1.99-Cisco-1.25
+Thread-2 paramiko.transport INFO: Connected (version 1.99, client Cisco-1.25)
+Thread-1 paramiko.transport DEBUG: kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+Thread-1 paramiko.transport DEBUG: Kex agreed: diffie-hellman-group-exchange-sha1
+Thread-1 paramiko.transport DEBUG: HostKey agreed: ssh-rsa
+Thread-1 paramiko.transport DEBUG: Cipher agreed: aes128-ctr
+Thread-1 paramiko.transport DEBUG: MAC agreed: hmac-sha2-256
+Thread-1 paramiko.transport DEBUG: Compression agreed: none
+Thread-2 paramiko.transport DEBUG: kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] server mac:['hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1', 'hmac-sha1-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+Thread-2 paramiko.transport DEBUG: Kex agreed: diffie-hellman-group-exchange-sha1
+Thread-2 paramiko.transport DEBUG: HostKey agreed: ssh-rsa
+Thread-2 paramiko.transport DEBUG: Cipher agreed: aes128-ctr
+Thread-2 paramiko.transport DEBUG: MAC agreed: hmac-sha2-256
+Thread-2 paramiko.transport DEBUG: Compression agreed: none
+Thread-1 paramiko.transport DEBUG: Got server p (2048 bits)
+Thread-2 paramiko.transport DEBUG: Got server p (2048 bits)
+Thread-1 paramiko.transport DEBUG: kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+Thread-1 paramiko.transport DEBUG: Switch to new keys ...
+Thread-2 paramiko.transport DEBUG: kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+ThreadPoolExecutor-0_1 paramiko.transport DEBUG: Adding ssh-rsa host key for 10.144.32.12: b'cf298cfbcac67ae27c73d8e56914d5c2'
+Thread-2 paramiko.transport DEBUG: Switch to new keys ...
+ThreadPoolExecutor-0_0 paramiko.transport DEBUG: Adding ssh-rsa host key for 10.144.32.11: b'c91d6f1298a7c0a653dbfbe28b1bddb7'
+Thread-1 paramiko.transport DEBUG: userauth is OK
+Thread-2 paramiko.transport DEBUG: userauth is OK
+Thread-1 paramiko.transport INFO: Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+Thread-2 paramiko.transport INFO: Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+Thread-2 paramiko.transport INFO: Authentication (password) successful!
+ThreadPoolExecutor-0_0 paramiko.transport DEBUG: [chan 0] Max packet in: 32768 bytes
+Thread-1 paramiko.transport INFO: Authentication (password) successful!
+ThreadPoolExecutor-0_1 paramiko.transport DEBUG: [chan 0] Max packet in: 32768 bytes
+Thread-2 paramiko.transport DEBUG: [chan 0] Max packet out: 4096 bytes
+Thread-2 paramiko.transport DEBUG: Secsh channel 0 opened.
+Thread-1 paramiko.transport DEBUG: [chan 0] Max packet out: 4096 bytes
+Thread-1 paramiko.transport DEBUG: Secsh channel 0 opened.
+Thread-2 paramiko.transport DEBUG: [chan 0] Sesch channel 0 request ok
+Thread-1 paramiko.transport DEBUG: [chan 0] Sesch channel 0 request ok
+Thread-2 paramiko.transport DEBUG: [chan 0] Sesch channel 0 request ok
+Thread-1 paramiko.transport DEBUG: [chan 0] Sesch channel 0 request ok
+ThreadPoolExecutor-0_0 netmiko DEBUG: write_channel: b'terminal width 511\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern is: terminal width 511
+ThreadPoolExecutor-0_1 netmiko DEBUG: write_channel: b'terminal width 511\n'
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern is: terminal width 511
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: termin
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: termin
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: al width 5
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: al width 
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: 11
+RTR02#
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern found: terminal width 511 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+RTR02#terminal width 511
+RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: 511
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: In disable_paging
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern found: terminal width 511 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+RTR01#terminal width 511
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: Command: terminal length 0
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: In disable_paging
+ThreadPoolExecutor-0_0 netmiko DEBUG: Command: terminal length 0
+
+ThreadPoolExecutor-0_1 netmiko DEBUG: write_channel: b'terminal length 0\n'
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern is: terminal\ length\ 0
+ThreadPoolExecutor-0_0 netmiko DEBUG: write_channel: b'terminal length 0\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern is: terminal\ length\ 0
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: t
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: t
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: erminal l
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: erminal l
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: ength 0
+
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern found: terminal\ length\ 0 terminal length 0
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: ength 0
+
+ThreadPoolExecutor-0_1 netmiko DEBUG: terminal length 0
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern found: terminal\ length\ 0 terminal length 0
+
+ThreadPoolExecutor-0_1 netmiko DEBUG: Exiting disable_paging
+ThreadPoolExecutor-0_0 netmiko DEBUG: terminal length 0
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: Exiting disable_paging
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: RTR02#
+ThreadPoolExecutor-0_1 netmiko DEBUG: Clear buffer detects data in the channel
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: RTR01#
+ThreadPoolExecutor-0_0 netmiko DEBUG: Clear buffer detects data in the channel
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: write_channel: b'\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_0 netmiko DEBUG: write_channel: b'\n'
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: [find_prompt()]: prompt is RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_0 netmiko DEBUG: [find_prompt()]: prompt is RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: write_channel: b'\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: write_channel: b'\n'
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: [find_prompt()]: prompt is RTR02#
+ThreadPoolExecutor-0_0 netmiko DEBUG: [find_prompt()]: prompt is RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: write_channel: b'show ip int brie\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern is: show\ ip\ int\ brie
+ThreadPoolExecutor-0_0 netmiko DEBUG: write_channel: b'show ip int brie\n'
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern is: show\ ip\ int\ brie
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: s
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: s
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: how ip i
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: how ip in
+ThreadPoolExecutor-0_1 netmiko DEBUG: _read_channel_expect read_data: nt brie
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: _read_channel_expect read_data: t brie
+ThreadPoolExecutor-0_0 netmiko DEBUG: Pattern found: show\ ip\ int\ brie show ip int brie
+ThreadPoolExecutor-0_1 netmiko DEBUG: Pattern found: show\ ip\ int\ brie show ip int brie
+
+ThreadPoolExecutor-0_0 netmiko DEBUG: read_channel: 
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         10.144.32.11    YES NVRAM  up                    up      
+GigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+RTR01#
+ThreadPoolExecutor-0_1 netmiko DEBUG: read_channel: Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         10.144.32.12    YES NVRAM  up                    up      
+GigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+RTR02#
