@@ -1,0 +1,86 @@
+ID    | TIMESTAMP               | LEVEL    | (UID:)HOST:PORT           | MESSAGE
+1     | 2021-08-08 02:06:40,951 | DEBUG    |                           | Scrapli factory initialized
+2     | 2021-08-08 02:06:40,952 | INFO     |                           | Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+3     | 2021-08-08 02:06:40,952 | DEBUG    | 10.144.32.11:22           | load core transport requested
+4     | 2021-08-08 02:06:40,952 | DEBUG    |                           | Scrapli factory initialized
+5     | 2021-08-08 02:06:40,953 | INFO     |                           | Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+6     | 2021-08-08 02:06:40,953 | DEBUG    | 10.144.32.12:22           | load core transport requested
+7     | 2021-08-08 02:06:40,962 | DEBUG    | 10.144.32.11:22           | core transport 'ssh2' loaded successfully
+8     | 2021-08-08 02:06:40,962 | DEBUG    | 10.144.32.12:22           | core transport 'ssh2' loaded successfully
+9     | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.11:22           | generating combined network comms prompt pattern
+10    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.12:22           | generating combined network comms prompt pattern
+11    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.11:22           | setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+12    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.12:22           | setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+13    | 2021-08-08 02:06:40,963 | INFO     | 10.144.32.11:22           | opening connection to '10.144.32.11' on port '22'
+14    | 2021-08-08 02:06:40,963 | INFO     | 10.144.32.12:22           | opening connection to '10.144.32.12' on port '22'
+15    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.11:22           | opening transport connection to '10.144.32.11' on port '22'
+16    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.12:22           | opening transport connection to '10.144.32.12' on port '22'
+17    | 2021-08-08 02:06:40,963 | DEBUG    | 10.144.32.11:22           | opening socket connection to '10.144.32.11' on port '22'
+18    | 2021-08-08 02:06:40,964 | DEBUG    | 10.144.32.12:22           | opening socket connection to '10.144.32.12' on port '22'
+19    | 2021-08-08 02:06:40,971 | DEBUG    | 10.144.32.11:22           | opened socket connection to '10.144.32.11' on port '22' successfully
+20    | 2021-08-08 02:06:40,972 | DEBUG    | 10.144.32.12:22           | opened socket connection to '10.144.32.12' on port '22' successfully
+21    | 2021-08-08 02:06:41,367 | DEBUG    | 10.144.32.12:22           | transport connection to '10.144.32.12' on port '22' opened successfully
+22    | 2021-08-08 02:06:41,368 | DEBUG    | 10.144.32.12:22           | write: '\n'
+23    | 2021-08-08 02:06:41,368 | DEBUG    | 10.144.32.11:22           | transport connection to '10.144.32.11' on port '22' opened successfully
+24    | 2021-08-08 02:06:41,369 | DEBUG    | 10.144.32.11:22           | write: '\n'
+25    | 2021-08-08 02:06:41,369 | DEBUG    | 10.144.32.11:22           | read : b"\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************\nRTR01#\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************\nRTR02#"
+26    | 2021-08-08 02:06:41,369 | INFO     | 10.144.32.12:22           | attempting to acquire 'privilege_exec' privilege level
+27    | 2021-08-08 02:06:41,370 | INFO     | 10.144.32.11:22           | attempting to acquire 'privilege_exec' privilege level
+28    | 2021-08-08 02:06:41,370 | DEBUG    | 10.144.32.12:22           | determined current privilege level is one of '['privilege_exec']'
+29    | 2021-08-08 02:06:41,370 | DEBUG    | 10.144.32.11:22           | determined current privilege level is one of '['privilege_exec']'
+30    | 2021-08-08 02:06:41,370 | DEBUG    | 10.144.32.11:22           | determined current privilege level is target privilege level, no action needed
+31    | 2021-08-08 02:06:41,370 | DEBUG    | 10.144.32.12:22           | determined current privilege level is target privilege level, no action needed
+32    | 2021-08-08 02:06:41,371 | INFO     | 10.144.32.11:22           | sending channel input: terminal length 0; strip_prompt: True; eager: False
+33    | 2021-08-08 02:06:41,371 | INFO     | 10.144.32.12:22           | sending channel input: terminal length 0; strip_prompt: True; eager: False
+34    | 2021-08-08 02:06:41,371 | DEBUG    | 10.144.32.11:22           | write: 'terminal length 0'
+35    | 2021-08-08 02:06:41,371 | DEBUG    | 10.144.32.12:22           | write: 'terminal length 0'
+36    | 2021-08-08 02:06:41,373 | DEBUG    | 10.144.32.11:22           | read : b'\n\nRTR02#RTR01#tteerrmmiinnaall  lleennggtthh  0'
+37    | 2021-08-08 02:06:41,394 | DEBUG    | 10.144.32.11:22           | write: '\n'
+38    | 2021-08-08 02:06:41,394 | DEBUG    | 10.144.32.12:22           | read : b'0'
+39    | 2021-08-08 02:06:41,394 | DEBUG    | 10.144.32.12:22           | write: '\n'
+40    | 2021-08-08 02:06:41,399 | DEBUG    | 10.144.32.11:22           | read : b'\n\nRTR01#RTR02#'
+41    | 2021-08-08 02:06:41,402 | INFO     | 10.144.32.12:22           | sending channel input: terminal width 512; strip_prompt: True; eager: False
+42    | 2021-08-08 02:06:41,402 | DEBUG    | 10.144.32.12:22           | write: 'terminal width 512'
+43    | 2021-08-08 02:06:41,403 | INFO     | 10.144.32.11:22           | sending channel input: terminal width 512; strip_prompt: True; eager: False
+44    | 2021-08-08 02:06:41,403 | DEBUG    | 10.144.32.11:22           | write: 'terminal width 512'
+45    | 2021-08-08 02:06:41,406 | DEBUG    | 10.144.32.11:22           | read : b'tteerrmmiinnaall  wwiiddtthh 5 152'
+46    | 2021-08-08 02:06:41,424 | DEBUG    | 10.144.32.11:22           | write: '\n'
+47    | 2021-08-08 02:06:41,424 | DEBUG    | 10.144.32.12:22           | read : b'12'
+48    | 2021-08-08 02:06:41,425 | DEBUG    | 10.144.32.12:22           | write: '\n'
+49    | 2021-08-08 02:06:41,428 | DEBUG    | 10.144.32.11:22           | read : b'\n\nRTR01#'
+50    | 2021-08-08 02:06:41,431 | INFO     | 10.144.32.11:22           | connection to '10.144.32.11' on port '22' opened successfully
+51    | 2021-08-08 02:06:41,431 | INFO     | 10.144.32.11:22           | sending channel input: show ip int brie; strip_prompt: True; eager: False
+52    | 2021-08-08 02:06:41,431 | DEBUG    | 10.144.32.11:22           | write: 'show ip int brie'
+53    | 2021-08-08 02:06:41,431 | DEBUG    | 10.144.32.12:22           | read : b'RTR02#'
+54    | 2021-08-08 02:06:41,432 | INFO     | 10.144.32.12:22           | connection to '10.144.32.12' on port '22' opened successfully
+55    | 2021-08-08 02:06:41,432 | INFO     | 10.144.32.12:22           | sending channel input: show ip int brie; strip_prompt: True; eager: False
+56    | 2021-08-08 02:06:41,432 | DEBUG    | 10.144.32.12:22           | write: 'show ip int brie'
+57    | 2021-08-08 02:06:41,435 | DEBUG    | 10.144.32.11:22           | read : b'sshhooww  ipi p iinnt tb rbriie'
+58    | 2021-08-08 02:06:41,451 | DEBUG    | 10.144.32.11:22           | write: '\n'
+59    | 2021-08-08 02:06:41,452 | DEBUG    | 10.144.32.12:22           | read : b'e'
+60    | 2021-08-08 02:06:41,452 | DEBUG    | 10.144.32.12:22           | write: '\n'
+61    | 2021-08-08 02:06:41,455 | DEBUG    | 10.144.32.11:22           | read : b'\n\nInterface                  IP-Address      OK? Method Status                Protocol\nGigabitEthernet0/0         10.144.32.11    YES NVRAM  up                    up      \nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \nRTR01#Interface                  IP-Address      OK? Method Status                Protocol\nGigabitEthernet0/0         10.144.32.12    YES NVRAM  up                    up      \nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \nRTR02#'
+62    | 2021-08-08 02:06:41,459 | INFO     | 10.144.32.12:22           | closing connection to '10.144.32.12' on port '22'
+63    | 2021-08-08 02:06:41,459 | INFO     | 10.144.32.11:22           | closing connection to '10.144.32.11' on port '22'
+64    | 2021-08-08 02:06:41,459 | DEBUG    | 10.144.32.12:22           | write: '\n'
+65    | 2021-08-08 02:06:41,460 | DEBUG    | 10.144.32.11:22           | write: '\n'
+66    | 2021-08-08 02:06:41,463 | DEBUG    | 10.144.32.11:22           | read : b'\nRTR01#\n'
+67    | 2021-08-08 02:06:41,464 | INFO     | 10.144.32.11:22           | attempting to acquire 'privilege_exec' privilege level
+68    | 2021-08-08 02:06:41,464 | DEBUG    | 10.144.32.11:22           | determined current privilege level is target privilege level, no action needed
+69    | 2021-08-08 02:06:41,464 | DEBUG    | 10.144.32.11:22           | write: 'exit'
+70    | 2021-08-08 02:06:41,464 | DEBUG    | 10.144.32.11:22           | write: '\n'
+71    | 2021-08-08 02:06:41,465 | DEBUG    | 10.144.32.11:22           | closing transport connection to '10.144.32.11' on port '22'
+72    | 2021-08-08 02:06:41,465 | DEBUG    | 10.144.32.12:22           | read : b'RTR02#'
+73    | 2021-08-08 02:06:41,466 | INFO     | 10.144.32.12:22           | attempting to acquire 'privilege_exec' privilege level
+74    | 2021-08-08 02:06:41,466 | DEBUG    | 10.144.32.12:22           | determined current privilege level is target privilege level, no action needed
+75    | 2021-08-08 02:06:41,466 | DEBUG    | 10.144.32.12:22           | write: 'exit'
+76    | 2021-08-08 02:06:41,466 | DEBUG    | 10.144.32.12:22           | write: '\n'
+77    | 2021-08-08 02:06:41,466 | DEBUG    | 10.144.32.12:22           | closing transport connection to '10.144.32.12' on port '22'
+78    | 2021-08-08 02:06:41,469 | DEBUG    | 10.144.32.11:22           | closing socket connection to '10.144.32.11' on port '22'
+79    | 2021-08-08 02:06:41,470 | DEBUG    | 10.144.32.11:22           | closed socket connection to '10.144.32.11' on port '22' successfully
+80    | 2021-08-08 02:06:41,470 | DEBUG    | 10.144.32.11:22           | transport connection to '10.144.32.11' on port '22' closed successfully
+81    | 2021-08-08 02:06:41,470 | INFO     | 10.144.32.11:22           | connection to '10.144.32.11' on port '22' closed successfully
+82    | 2021-08-08 02:06:41,470 | DEBUG    | 10.144.32.12:22           | closing socket connection to '10.144.32.12' on port '22'
+83    | 2021-08-08 02:06:41,470 | DEBUG    | 10.144.32.12:22           | closed socket connection to '10.144.32.12' on port '22' successfully
+84    | 2021-08-08 02:06:41,470 | DEBUG    | 10.144.32.12:22           | transport connection to '10.144.32.12' on port '22' closed successfully
+85    | 2021-08-08 02:06:41,470 | INFO     | 10.144.32.12:22           | connection to '10.144.32.12' on port '22' closed successfully

@@ -1,0 +1,197 @@
+ThreadPoolExecutor-0_0 scrapli DEBUG: Scrapli factory initialized
+ThreadPoolExecutor-0_0 scrapli INFO: Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+ThreadPoolExecutor-0_1 scrapli DEBUG: Scrapli factory initialized
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: load core transport requested
+ThreadPoolExecutor-0_1 scrapli INFO: Driver '<class 'scrapli.driver.core.cisco_iosxe.sync_driver.IOSXEDriver'>' selected from scrapli core drivers
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: load core transport requested
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: core transport 'system' loaded successfully
+ThreadPoolExecutor-0_0 scrapli.transport DEBUG: created transport 'open_cmd': '['ssh', '10.144.32.11', '-p', '22', '-o', 'ConnectTimeout=15', '-o', 'ServerAliveInterval=30', '-l', 'cisco', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/dev/null', '-F', '/dev/null', '-o', 'PubkeyAuthentication=no']'
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: core transport 'system' loaded successfully
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: generating combined network comms prompt pattern
+ThreadPoolExecutor-0_1 scrapli.transport DEBUG: created transport 'open_cmd': '['ssh', '10.144.32.12', '-p', '22', '-o', 'ConnectTimeout=15', '-o', 'ServerAliveInterval=30', '-l', 'cisco', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/dev/null', '-F', '/dev/null', '-o', 'PubkeyAuthentication=no']'
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: generating combined network comms prompt pattern
+ThreadPoolExecutor-0_0 scrapli.driver INFO: opening connection to '10.144.32.11' on port '22'
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: setting 'comms_prompt_pattern' value to '(^[\w.\-@/:]{1,63}>$)|(^[\w.\-@/:]{1,63}#$)|(^[\w.\-@/:]{1,63}\([\w.\-@/:+]{0,32}\)#$)|(^([\w.\-@/+>:]+\(tcl\)[>#]|\+>)$)'
+ThreadPoolExecutor-0_0 scrapli.transport DEBUG: opening transport connection to '10.144.32.11' on port '22'
+ThreadPoolExecutor-0_1 scrapli.driver INFO: opening connection to '10.144.32.12' on port '22'
+ThreadPoolExecutor-0_1 scrapli.transport DEBUG: opening transport connection to '10.144.32.12' on port '22'
+ThreadPoolExecutor-0_1 scrapli.transport DEBUG: transport connection to '10.144.32.12' on port '22' opened successfully
+ThreadPoolExecutor-0_0 scrapli.transport DEBUG: transport connection to '10.144.32.11' on port '22' opened successfully
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: attempting in channel ssh authentication
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: attempting in channel ssh authentication
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: read: b"Warning: Permanently added '10.144.32.12' (RSA) to the list of known hosts.\n"
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: read: b"Warning: Permanently added '10.144.32.11' (RSA) to the list of known hosts.\n"
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: read: b"\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************"
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: read: b"\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************"
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: read: b'Password: '
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: write: REDACTED
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: read: b'Password: '
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: write: REDACTED
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-1_0 scrapli.channel DEBUG: read: b"\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************\nRTR02#"
+ThreadPoolExecutor-13_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-2_0 scrapli.channel DEBUG: read: b"\n**************************************************************************\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\n* education. IOSv is provided as-is and is not supported by Cisco's      *\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\n* of the IOSv Software or Documentation to any third party for any       *\n* purposes is expressly prohibited except as otherwise authorized by     *\n* Cisco in writing.                                                      *\n**************************************************************************\nRTR01#"
+ThreadPoolExecutor-15_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-13_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-13_0 scrapli.channel DEBUG: read: b'RTR02#'
+ThreadPoolExecutor-0_1 scrapli.driver INFO: attempting to acquire 'privilege_exec' privilege level
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: determined current privilege level is one of '['privilege_exec']'
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: determined current privilege level is target privilege level, no action needed
+ThreadPoolExecutor-18_0 scrapli.channel INFO: sending channel input: terminal length 0; strip_prompt: True; eager: False
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: write: 'terminal length 0'
+ThreadPoolExecutor-15_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-15_0 scrapli.channel DEBUG: read: b'RTR01#'
+ThreadPoolExecutor-0_0 scrapli.driver INFO: attempting to acquire 'privilege_exec' privilege level
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: determined current privilege level is one of '['privilege_exec']'
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: determined current privilege level is target privilege level, no action needed
+ThreadPoolExecutor-21_0 scrapli.channel INFO: sending channel input: terminal length 0; strip_prompt: True; eager: False
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: write: 'terminal length 0'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'r'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'm'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'ter'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'm'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'a'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'l'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'a'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'l'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'l '
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'l'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'g'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'g'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'0'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'0'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-18_0 scrapli.channel DEBUG: read: b'RTR02#'
+ThreadPoolExecutor-56_0 scrapli.channel INFO: sending channel input: terminal width 512; strip_prompt: True; eager: False
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: write: 'terminal width 512'
+ThreadPoolExecutor-21_0 scrapli.channel DEBUG: read: b'RTR01#'
+ThreadPoolExecutor-58_0 scrapli.channel INFO: sending channel input: terminal width 512; strip_prompt: True; eager: False
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: write: 'terminal width 512'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'r'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'm'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'r'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'm'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'a'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'l'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'w'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'a'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'l'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'd'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'w'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'd'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'51'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'2'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'5'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'1'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'2'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-56_0 scrapli.channel DEBUG: read: b'RTR02#'
+ThreadPoolExecutor-0_1 scrapli.driver INFO: connection to '10.144.32.12' on port '22' opened successfully
+ThreadPoolExecutor-96_0 scrapli.channel INFO: sending channel input: show ip int brie; strip_prompt: True; eager: False
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: write: 'show ip int brie'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-58_0 scrapli.channel DEBUG: read: b'RTR01#'
+ThreadPoolExecutor-0_0 scrapli.driver INFO: connection to '10.144.32.11' on port '22' opened successfully
+ThreadPoolExecutor-99_0 scrapli.channel INFO: sending channel input: show ip int brie; strip_prompt: True; eager: False
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: write: 'show ip int brie'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b's'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b's'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'h'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'ow '
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'o'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'w'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'p'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'p'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'n'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b't'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'b'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'nt'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b' '
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'r'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'b'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'r'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'i'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'e'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-96_0 scrapli.channel DEBUG: read: b'Interface                  IP-Address      OK? Method Status                Protocol\nGigabitEthernet0/0         10.144.32.12    YES NVRAM  up                    up      \nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \nRTR02#'
+ThreadPoolExecutor-0_1 scrapli.driver INFO: closing connection to '10.144.32.12' on port '22'
+ThreadPoolExecutor-132_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-99_0 scrapli.channel DEBUG: read: b'Interface                  IP-Address      OK? Method Status                Protocol\nGigabitEthernet0/0         10.144.32.11    YES NVRAM  up                    up      \nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \nRTR01#'
+ThreadPoolExecutor-0_0 scrapli.driver INFO: closing connection to '10.144.32.11' on port '22'
+ThreadPoolExecutor-134_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-132_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-132_0 scrapli.channel DEBUG: read: b'RTR02#'
+ThreadPoolExecutor-0_1 scrapli.driver INFO: attempting to acquire 'privilege_exec' privilege level
+ThreadPoolExecutor-0_1 scrapli.driver DEBUG: determined current privilege level is target privilege level, no action needed
+ThreadPoolExecutor-0_1 scrapli.channel DEBUG: write: 'exit'
+ThreadPoolExecutor-0_1 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-0_1 scrapli.transport DEBUG: closing transport connection to '10.144.32.12' on port '22'
+ThreadPoolExecutor-134_0 scrapli.channel DEBUG: read: b'\n'
+ThreadPoolExecutor-134_0 scrapli.channel DEBUG: read: b'RTR01#'
+ThreadPoolExecutor-0_0 scrapli.driver INFO: attempting to acquire 'privilege_exec' privilege level
+ThreadPoolExecutor-0_0 scrapli.driver DEBUG: determined current privilege level is target privilege level, no action needed
+ThreadPoolExecutor-0_0 scrapli.channel DEBUG: write: 'exit'
+ThreadPoolExecutor-0_0 scrapli.channel DEBUG: write: '\n'
+ThreadPoolExecutor-0_0 scrapli.transport DEBUG: closing transport connection to '10.144.32.11' on port '22'
+ThreadPoolExecutor-0_1 scrapli.transport DEBUG: transport connection to '10.144.32.12' on port '22' closed successfully
+ThreadPoolExecutor-0_1 scrapli.driver INFO: connection to '10.144.32.12' on port '22' closed successfully
+ThreadPoolExecutor-0_0 scrapli.transport DEBUG: transport connection to '10.144.32.11' on port '22' closed successfully
+ThreadPoolExecutor-0_0 scrapli.driver INFO: connection to '10.144.32.11' on port '22' closed successfully
